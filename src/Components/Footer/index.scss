@@ -1,0 +1,20 @@
+
+.footer{
+    background: #151414;
+    position: relative;
+
+    &__area{
+        background: #202020;
+        padding: 15px 0;
+
+        &__text p {
+            margin: 0;
+            font-size: 14px;
+            color: #878787;
+
+            a{
+                color: #ff5e14;
+            }
+          }
+      }
+  }       
