@@ -102,7 +102,7 @@ function ProductList() {
                 </div>
             ) }
             {
-                filteredItems.length == 0 && ( 
+                filteredItems.length === 0 && ( 
                          <div className="product__result__alert">
                             <div>
                                 <span className="product__result__alert--text"> 
