@@ -7,12 +7,11 @@ import {
   } from "react-router-dom"; 
 
 function RoutersWrapper() {
-    console.log("this");
     return (
         <>
             <Routes> 
                 <Route exact path="/"  element={<ProductList />} />
-                <Route path="/product-detail" element={<ProductDetail />} />
+                <Route path="/product-detail/" element={<ProductDetail />} />
             </Routes>
         </>
     )

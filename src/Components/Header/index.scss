@@ -40,7 +40,7 @@ $screen-md-max: ($screen-lg-min - 1);
   
   // Custom devices   -- HVK
   @mixin rwd($screen-min, $screen-max) {
-    @media (min-width: $screen-min+"px") and (max-width: $screen-max+"px") {
+    @media (min-width: $screen-min + "px") and (max-width: $screen-max+"px") {
       @content;
     }
   }
@@ -58,7 +58,7 @@ main {
     min-height: 100vh;
 
     @include xl{
-        min-height: calc(100vh - 40px);
+        min-height: calc(100vh - 68px);
     }
 }
 
