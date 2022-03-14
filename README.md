@@ -1,4 +1,38 @@
-# Getting Started with Create React App
+# FRONTEND CASE -- CHALLENGE 
+# frontend-gulp
+Bu front-end işlerinize gulp ile başlamanız için bir başlangıç paketidir. 
+
+# Proje local ortamda nasıl ayağa kaldırılır ?
+  ````  
+  Projeyi localine aldıktan sonrasında npm install ile package yüklemesi yapılır.
+  Akabinde npm start komutu ile proje ayağa kaldırılır.
+
+    ### `npm start`
+
+    Runs the app in the development mode.\
+    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+    The page will reload when you make changes.\
+    You may also see any lint errors in the console.
+
+  ````  
+  Bu projede gerçekleştirilen features'lar neler ?    
+  →     /.netlify/functions/products JSON URL ~ API üzerinden data okuma , listeleme, Arama & Sayfalama işlemleri gerçekleştiren  
+  bir React projesidir.  
+
+  ````  
+  Proje kodlama süreci
+  →  Proje React yapıları (Reducer,useeffect,Store,jsx) ile beraberinde BEM metodolojisine uygun  HTML & SASS kodlamaları içerisinde barındırır.
+
+  ````  
+  Site deployment süreci hakkında
+  → Deployment sürecinde Netlify tercih edilmiştir.
+
+  `````
+  Harun Veli KAYSILI  - Senior Frontend Developer
+  
+  ````
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,13 +40,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
