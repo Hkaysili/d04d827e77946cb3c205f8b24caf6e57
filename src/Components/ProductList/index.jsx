@@ -112,7 +112,7 @@ function ProductList() {
                                 </span>       
                             </div>    
                         </div>
-                ) 
+                )  
             }
         </>
     )
