@@ -9,7 +9,8 @@ function ProductList() {
     const list = useSelector(state => state.list.listData);
     const [pag, setPag] = useState(1);
     const [isSearch, setIsSearch] = useState(false);
-    const [val, setVal] = useState('');  
+    const [val, setVal] = useState(''); 
+    const [resultCall, setResultCall] = useState(false);
     const dispatch = useDispatch();
     useEffect(()=>{
       dispatch(fetchProducts()) 
@@ -58,10 +59,10 @@ function ProductList() {
                 <input type="text" onInput={handleInput} placeholder="Please enter the product you want to search"/>
             </div>
             <div id="product-list" className="product__list__wrapper"> 
-                {isSearch && val !== '' ? (
+                {isSearch && val !== ''  ? (
                     display.map((item, index) => ( 
                         index < 10 && (
-                            <>   
+                            <>     
                                 <Link to="/product-detail" className="product__list__item" state={item}>
                                     <div className="product__list__item--image">
                                         <img src={item.image.src} alt="" />
@@ -96,17 +97,23 @@ function ProductList() {
                 )
                 )}
             </div>
-            {!isSearch ?  (
+            {  !isSearch   &&  (
                 <div className="product__pagination">
                     {createPagination()}
                 </div>
-            ) : (
-                <div className="product__result__alert">
-                    <div>
-                        <span className="product__result__alert--text"> <span style={{color:"darkred", fontWeight:"bolder", marginRight: 30}}>{val}</span>  No results were found for your search.</span>
-                    </div>    
-                </div>
-            )}
+            ) }
+            {
+                filteredItems.length == 0 && ( 
+                         <div className="product__result__alert">
+                            <div>
+                                <span className="product__result__alert--text"> 
+                                    <span style={{color:"darkred", fontWeight:"bolder", marginRight: 30}}>{val}</span>  
+                                        No results were found for your search.   
+                                </span>       
+                            </div>    
+                        </div>
+                ) 
+            }
         </>
     )
 }
