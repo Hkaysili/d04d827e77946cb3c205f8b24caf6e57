@@ -9,8 +9,7 @@ function ProductList() {
     const list = useSelector(state => state.list.listData);
     const [pag, setPag] = useState(1);
     const [isSearch, setIsSearch] = useState(false);
-    const [val, setVal] = useState(''); 
-    const [resultCall, setResultCall] = useState(false);
+    const [val, setVal] = useState('');  
     const dispatch = useDispatch();
     useEffect(()=>{
       dispatch(fetchProducts()) 
